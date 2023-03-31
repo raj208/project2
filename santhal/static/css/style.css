@@ -819,12 +819,3 @@ font-size:13px;
 	font-weight: 400;
 }
 }
-
-.nav-bar-links:hover {
-	background: #b6124a !important; 
-	color: #fff !important;
-}
-
-.nav-bar-links a:hover {
-	color: #fff !important;
-}
