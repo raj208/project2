@@ -13,8 +13,11 @@ class Team(models.Model):
     twitter_link = models.URLField(max_length=100)
     linkedin_link = models.URLField(max_length=100)
     instagram_link = models.URLField(max_length=100)
-    created_date = models.DateTimeField(auto_now_add=True)\
+    created_date = models.DateTimeField(auto_now_add=True)
     
-    def __str__(self):
-        return self.first_name
+    # def __str__(self):
+    #     return self.first_name
+ 
+class Designation:
+    first_name = str
  
