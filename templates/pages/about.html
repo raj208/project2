@@ -72,91 +72,30 @@
                 </div>
             </div>
             <div class="row">
-
+                {% for team in teams %}
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <!-- Team Member -->
                     <div class="team-member">
                         <!-- Image Hover Block -->
                         <div class="member-img">
                             <!-- Image  -->
-                            <img class="img-responsive" src="{% static 'images/photo-1.jpg' %}" alt="">
+                            <img class="img-responsive" src={{team.photo.url}} alt="">
                         </div>
                         <!-- Member Details -->
-                        <h4>{{dest1.first_name}}</h4>
+                        <h4>{{team.first_name}}</h4>
                         <!-- Designation -->
-                        <span class="pos">CEO</span>
+                        <span class="pos">{{team.Designation}}</span>
                         <div class="team-socials">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class={{team.facebook_link}}></i></a>
+                            <a href="#"><i class={{team.google_link}}></i></a>
+                            <a href="#"><i class={{team.twitter_link}}></i></a>
+                            <a href="#"><i class={{team.instagram_link}}></i></a>
+                            <a href="#"><i class={{team.linkedin_link}}></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="{% static 'images/photo-2.jpg' %}"alt="">
-                        </div>
-                        <!-- Member Details -->
-                        <h4>Larry Doe</h4>
-                        <!-- Designation -->
-                        <span class="pos">Art Director</span>
-                        <div class="team-socials">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="{% static 'images/photo-3.jpg' %}" alt="">
-                        </div>
-                        <!-- Member Details -->
-                        <h4>Ranith Kays</h4>
-                        <!-- Designation -->
-                        <span class="pos">Manager</span>
-                        <div class="team-socials">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="{% static 'images/photo-4.jpg' %}"pg" alt="">
-                        </div>
-                        <!-- Member Details -->
-                        <h4>Joan Ray</h4>
-                        <!-- Designation -->
-                        <span class="pos">Creative</span>
-                        <div class="team-socials">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
+               
             </div>
         </div>
     </section>
