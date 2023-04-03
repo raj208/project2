@@ -16,8 +16,8 @@ def about(request):
 def contact(request):
     return render(request, 'pages/contact.html')
 
-def courses(request):
-    return render(request, 'pages/courses.html')
+def product(request):
+    return render(request, 'pages/product.html')
 
 def fees(request):
     return render(request, 'pages/fees.html')
