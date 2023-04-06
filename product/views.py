@@ -3,11 +3,11 @@ from .models import Product
 
 # Create your views here.
 def home(request):
-    # products = Product.object.all()
+    products = Product.objects.all()
 
-    # data = {
-    #     'products' : products ,
-    # }
+    data = {
+        'products' : products ,
+    }
 
     product = Product.objects.all()
-    return render(request, 'product/home.html', {'product':product})
+    return render(request, 'product/home.html', context =data)

@@ -61,12 +61,12 @@
                 <option>Sort By Sale</option>
             </select>
         </div>
-        {% for product in products %}
+        
         <div class="row">
-         
+         {% for product in products %}
             <div class="col-4">
-                <a href="product_details.html"><img class="img-responsive" src="{% static 'photos/product-1.jpg' %}"></a>
-                <h4>Red Printed T-Shirt</h4>
+                <a href="product_details.html"><img src="{{ product.photo.url }}"></a>
+                <h4>{{ product.product_name }}</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -74,10 +74,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>{{ product.price }}</p>
             </div>
         {% endfor %}
-        
         <div class="page-btn">
             <span>1</span>
             <span>2</span>
