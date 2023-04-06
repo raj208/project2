@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages',
     'product',
+
+    # Advanced Text Editor
+    'ckeditor',
+    
 ]
 
 MIDDLEWARE = [
