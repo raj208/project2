@@ -18,6 +18,7 @@ class ProductAdmin(admin.ModelAdmin):
     
     thumbnail.short_description = "photo"
     list_display = ("id" ,"product_name","thumbnail","price")
+    list_display_links = ("product_name", "thumbnail")
 
 
 admin.site.register(Product, ProductAdmin)
