@@ -14,9 +14,13 @@ def home(request):
     # product = Product.objects.all()
     return render(request, 'product/home.html', context =data)
 
-def Product_details(request):
-    # Product = get_object_or_404(Product, id = pk)
-    # data = {
-    #     'product' : Product
-    # }
-    return render(request, 'product/product_details.html')
+def Product_details(request, pk):
+    products = get_object_or_404(Product, id = pk)
+    data = {
+        'product' : products,
+    }
+    return render(request, 'product/product_details.html', context=data)
+
+# def Product_details(request):
+
+#     return render(request, 'product/product_details.html')

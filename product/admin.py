@@ -17,7 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
          return format_html(f"<img src= {object.photo.url} width = '40px' styles = 'border_radius:100px'")
     
     thumbnail.short_description = "photo"
-    list_display = ("product_name","thumbnail","price")
+    list_display = ("id" ,"product_name","thumbnail","price")
 
 
 admin.site.register(Product, ProductAdmin)
