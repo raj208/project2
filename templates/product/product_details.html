@@ -55,16 +55,24 @@
 
                 <div class="small-img-row">
                     <div class="small-img-col">
+                        
                         <img src="{{ product.photo.url }}"width="100%" class="small-img">
+                        
                     </div>
                     <div class="small-img-col">
+                        {% if product.photo1 %}
                         <img src="{{ product.photo1.url }}"width="100%" class="small-img">
+                        {% endif %}
                     </div>
                     <div class="small-img-col">
-                        <img src="{{ product.photo.2url }}"width="100%" class="small-img">
+                        {% if product.photo2 %}
+                        <img src="{{ product.photo2.url }}"width="100%" class="small-img">
+                        {% endif %}
                     </div>
                     <div class="small-img-col">
+                        {% if product.photo3 %}
                         <img src="{{ product.photo3.url }}"width="100%" class="small-img">
+                        {% endif %}
                     </div>
                 </div>
 
