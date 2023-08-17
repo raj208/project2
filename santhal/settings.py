@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = 'django-insecure-f3jr*$!*)am7vsv+(wpi8up0svligf)5=jyzueqtg#0#jbc22n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'pages',
     'product',
 
@@ -89,7 +90,7 @@ WSGI_APPLICATION = 'santhal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydb2',
+        'NAME': 'mydb3',
         'USER': 'postgres',
         'PASSWORD': 'mypass',
         'HOST': '127.0.0.1',
