@@ -18,4 +18,16 @@ class Team(models.Model):
     
     def __str__(self):
         return self.first_name
- 
+    
+    # def imageURL(self):
+    #     if self.photo:
+    #         return self.photo.url
+    #     else:
+    #         return 'images/placeholder.png'
+    # @property
+    # def imageURL(self):
+    #     try:
+    #         url = self.photo.url
+    #     except:
+    #         url=''
+    #     return url
