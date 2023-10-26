@@ -40,10 +40,20 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'pages',
     'product',
+    'accounts',
+    
 
     # Advanced Text Editor
     'ckeditor',
     
+    # 3rd Party authentication
+    # 'django.contrib.sites',
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
+
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [

@@ -29,3 +29,4 @@ def sidebar(request):
     return render(request, 'pages/sidebar.html')
 
 
+
