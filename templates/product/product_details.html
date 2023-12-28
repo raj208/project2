@@ -1,51 +1,38 @@
+{% extends 'base.html' %}
 {% load static %}
 {% load humanize %}
+
+{% include 'includes/navbar.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
-    {% include 'includes/topbar.html' %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products | RedStore</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- Button for smallest screens -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="{% static 'images/logo.png' %}" alt="Techro HTML5 template"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav pull-right mainNav">
-                    <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'product' %}">Product</a></li>
-                    <li><a href="{% url 'fees' %}">Fees</a></li>
-                    <li><a href="{% url 'protfilio' %}">Portfolio</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{% url 'sidebar' %}">Right Sidebar</a></li>
-                            <li><a href="#">Dummy Link1</a></li>
-                            <li><a href="#">Dummy Link2</a></li>
-                            <li><a href="#">Dummy Link3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
-    <!-- /.navbar -->
+
+
+    <style>
+        .custom-text-red {
+            text-align: center;
+            margin-top: 100px; /* Adjust the margin-top value to center vertically */
+            color: red; /* Set the desired text color */
+        }
+    </style>
+    
+    <h1 class="custom-text-red"> UNDER MAINTENANCE </h1>
 
     <!-- Single Products -->
     <div class="small-container single-product">
@@ -99,14 +86,14 @@
         </div>
     </div>
     <!-- title -->
-    <div class="small-container">
+    <!-- <div class="small-container">
         <div class="row row-2">
             <h2>Related Products</h2>
             <p>View More</p>
         </div>
-    </div>
+    </div> -->
     <!-- Products -->
-    <div class="small-container">
+    <!-- <div class="small-container">
         <div class="row">
             <div class="col-4">
                 <img src="images/product-9.jpg">
@@ -157,51 +144,8 @@
                 <p>$50.00</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <footer id="footer">
-        <div class="container">
-            <div class="social text-center">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-flickr"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-    
-            <div class="clear"></div>
-            <!--CLEAR FLOATS-->
-        </div>
-        <div class="footer2">
-            <div class="container">
-                <div class="row">
-    
-                    <div class="col-md-6 panel">
-                        <div class="panel-body">
-                            <p class="simplenav">
-                                <a href="{% url 'home' %}">Home</a> | 
-                                <a href="{% url 'about' %}">>About</a> |
-                                <a href="{% url 'product' %}">Product</a> |
-                                <a href="{% url 'fees' %}">Fees</a> |
-                                <a href="{% url 'protfilio' %}">Portfolio</a> |
-                                <a href="{% url 'contact' %}">Contact</a>
-                            </p>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 panel">
-                        <div class="panel-body">
-                            <p class="text-right">
-                                Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-                <!-- /row of panels -->
-            </div>
-        </div>
-    </footer>
 
     <!-- javascript -->
 
@@ -239,4 +183,8 @@
     </script>
 </body>
 
+
 </html>
+
+{% endblock content %}
+{% include 'includes/footer.html' %}

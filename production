@@ -1,0 +1,5 @@
+remove security keys
+change the database settings
+host settings
+crated app blog->added int settings.py, made urls.py
+balck background -> changes base.html, changed navbar.html

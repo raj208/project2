@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+ {% extends 'base.html' %}
 {% load static %}
 
 {% block content %} 
@@ -9,18 +9,18 @@
 			<div class="banner-content">
 				<div id="da-slider" class="da-slider">
 					<div class="da-slide">
-						<h2>Educational Website</h2>
-						<p>Amazing free responsive website for free, enjoy!!!</p>
+						<h2>Johar Sanam Ko</h2>
+						<p>Ape joto ko ge buru leka hara koh peh !!!</p>
 						<div class="da-img"></div>
 					</div>
 					<div class="da-slide">
-						<h2>Online Education</h2>
-						<p>Bootstrap is a powerful mobile first front-end framework..</p>
+						<h2>सभी को नमस्कार</h2>
+						<p>"आपके दिन खुशियों से भरे हों, आपका दिल गर्मजोशी से भरा हो, और आपकी यात्रा सफलता से भरी हो।"</p>
 						<div class="da-img"></div>
 					</div>
 					<div class="da-slide">
-						<h2>Super Success</h2>
-						<p>HTML5 is a markup language used for structuring and presenting Web.</p>
+						<h2>Hello Everyone</h2>
+						<p>“May your days be filled with happiness, your heart with warmth, and your journey be filled with success.”</p>
 						<div class="da-img"></div>
 					</div>
 				</div>
@@ -32,17 +32,20 @@
 	   <section class="container">
 		<div class="heading">
 			<!-- Heading -->
-			<h2>About the school</h2>
+			<h2 class="custom-text-colors">About the Santhals</h2>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
 				<img src="{% static 'images/single.jpg' %}" alt="" class="img-responsive">
 			</div>
 			<div class="col-md-8">
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+				<p class="custom-text-color">The Santhal people, a prominent tribal community in India, inhabit regions across Jharkhand, West Bengal, Bihar, Odisha, and Assam. Speaking their native language Santhali, they traditionally rely on agriculture, cultivating crops like rice. The Santhal culture is rich, featuring vibrant music and dance forms such as the "Chadheya" dance. Their festivals, including Baha, Sohrai, and Mage Parab, are linked to agricultural practices. Following their indigenous religion, Santhals worship spirits, ancestors, and natural elements. Socially, they have a structured society with a village headman ("Majhi") and a council ("Majhi-Pargana"). Known for their artistic skills, Santhals engage in traditional art, craft, and weaving, depicting scenes from daily life and cultural stories. Challenges faced by the Santhal community include land rights and preserving cultural identity amid modernization. Ongoing efforts focus on education, healthcare, and cultural preservation for the Santhal people. </p>
 				<blockquote class="blockquote-1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
-					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+					<p class="custom-text-colorss">Ol mena tama, Ror mana tama,</p> 
+                    <p class="custom-text-colorss">Dhorom mena tama, Aam ho menam.</p>
+                    <p class="custom-text-colorss">ol em aat le re Ror em dat le re,</p>
+                    <p class="custom-text-colorss">Dhorom em aat le re,aam hom aado"</p>
+					<small> Pt. Raghunath Murmu  <cite title="Source Title"> </cite></small>
 				</blockquote>
 			</div>
 		</div>
@@ -51,80 +54,113 @@
 	
       <section class="container">
       <div class="row">
-      	<div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Our Students</h2></div> 
-        <p><span>Perspiciatis unde omnis iste natus error sit voluptatem. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus musull dui.</span></p>
-        <p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
+      	<div class="col-md-4"><div class="title-box clearfix ">
+            <h2 class="custom-text-colors" >Identity</h2>
+        </div> 
+        <p class="custom-text-color"><span class="custom-text-color">  The word ‘Santhal’ is derived from two words; santa meaning calm and peaceful and ala meaning man. In the past, the Santhals were leading a nomadic life. Gradually they came to settle down in the Chhotanagpur plateau. Towards the end of 18th Century they migrated to the Santhal Parganas of Bihar and then they came to Odisha/West Bengal. They speak Santhali language which belongs to the Santhal group of Austro-Asiatic sub family of languages. The Santhali has its own script called “Ol chiki” invented by Pundit Raghunath Murmu.</span></p>
+        <p class="custom-text-color">By their physical features the Santhals have long head, brownish body colour and flat nose. The Santhals are progressive community.  </p>
         <a href="#" title="read more" class="btn-inline " target="_self">read more</a> </div>
+        <div class="col-md-8">
+            <img src="{% static 'images/house.jpg' %}" alt="" class="img-responsive small-photo">
+        </div>
         
-        <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Courses</h2></div> 
-            <div class="list styled custom-list">
-            <ul>
-            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Mathematics and Computer Science</a></li>
-            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Mathematics and Philosophy</a></li>
-            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">Philosophy and Modern Languages</a></li>
-            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">History (Ancient and Modern)</a></li>
-            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Classical Archaeology and Ancient History</a></li>
-            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Physics and Philosophy</a></li>
-            </ul>
-            </div>
-         </div>
-         <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Locations</h2></div> 
-            <figure class="frame thumbnail alignnone clearfix">
-            <p><img class="size-full " alt="usa" src="{% static 'images/ny.png' %}" width="" height="197"></p>
-            </figure></div>
-         
-      </div>
+        
       </section>
       
     
       
-      <section class="news-box">
+      <style>
+        .thumbnail img {
+            width: 100%; /* Ensure the image takes 100% of the container width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+    
+        .caption {
+            padding: 10px; /* Adjust padding as needed */
+        }
+    </style>
+    
+    <section class="news">
         <div class="container">
-            <h2><span>Latest News</span></h2>
+            <h2 class="custom-text-colors">
+                Famous Personalities
+            </h2>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><time datetime="2014-01-01">25 Nov, 2014</time><img src="{% static 'images/news1.jpg' %}" alt=""></figure>
-                            <div class="caption maxheight2"><div class="box_inner">
-                               Lorem ipsum dolor sit amet conse ctetu eiusmod.
-                            </div></div>
+                            <figure>
+                                <time datetime="2014-01-01">Droupadi Murmu</time>
+                                <img src="{% static 'images/fp1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <a href="https://en.wikipedia.org/wiki/Droupadi_Murmu" class="newsBox-link, target =  "_blank">     
+                                        President of India
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><time datetime="2014-01-01">25 Nov, 2014</time><img src="{% static 'images/news2.jpg' %}" alt=""></figure>
-                            <div class="caption maxheight2"><div class="box_inner">
-                                Lorem ipsumulum aenean noummy endrerit mauris.
-                            </div></div>
+                            <figure>
+                                <time datetime="2014-01-01">Pt. Raghunath Murmu</time>
+                                <img src="{% static 'images/fp2.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <a href="https://en.wikipedia.org/wiki/Raghunath_Murmu" class="newsBox-link target="_blank">     
+                                        Indian Santhali writer and educator
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><time datetime="2014-01-01">25 Nov, 2014</time><img src="{% static 'images/news3.jpg' %}" alt=""></figure>
-                            <div class="caption maxheight2"><div class="box_inner">
-                                Pariatur excepteur sint occaummy endrerit mauris.
-                            </div></div>
+                            <figure>
+                                <time datetime="2014-01-01">Hemant Soren</time>
+                                <img src="{% static 'images/fp3.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <a href="https://en.wikipedia.org/wiki/Hemant_Soren" class="newsBox-link target="_blank">     
+                                        Chief Minister of Jharkhand
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><time datetime="2014-01-01">25 Nov, 2014</time><img src="{% static 'images/news4.jpg' %}" alt=""></figure>
-                            <div class="caption maxheight2"><div class="box_inner">
-                                Magnis dis parturient montes ascetur ridiculus mus.
-                            </div></div>
+                            <figure>
+                                <time datetime="2014-01-01">Sidhu and Kanhu Murmu</time>
+                                <img src="{% static 'images/fp4.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <a href="https://en.wikipedia.org/wiki/Sidhu_and_Kanhu_Murmu" class="newsBox-link target="_blank">     
+                                        Leaders of the Santhal rebellion 
+                                    </a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
+                <!-- Repeat the same structure for other images -->
             </div>
         </div>
     </section>
+    
    
 
     {% endblock content %}
