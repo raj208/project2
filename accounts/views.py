@@ -38,11 +38,13 @@ def register(request):
         isEmail = False
 
         if password == confirm_password:
+            # user already in database
             if User.objects.filter(username=username).exists():
                 isUsername = True
                 messages.error(request, "Username already exists !!!")
                 return redirect('register')
             
+            # email already exists
             if User.objects.filter(email=email).exists():
                 isEmail = True
                 if isEmail and isUsername:
@@ -67,11 +69,11 @@ def register(request):
 
     return render(request, 'accounts/register.html')
 
-# def dashboard(request):
-#     if request.user.is_authenticated:
-#         return render(request, 'accounts/dashboard.html')
-#     messages.error(request, "You are not allowed to access this page !!!")
-#     return redirect('login')
+def dashboard(request):
+    if request.user.is_authenticated:
+        return render(request, 'accounts/dashboard.html')
+    messages.error(request, "You are not allowed to access this page !!!")
+    return redirect('login')
 
 # def logout(request):
 #     auth.logout(request)
