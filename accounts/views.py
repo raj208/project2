@@ -18,13 +18,6 @@ def login(request):
         messages.error(request, "Invalid Credentials")
     return render(request, 'accounts/login.html')
 
-# def login(request):
-#     return render(request, 'accounts/login.html')
-
-
-# def register(request):
-#     return render(request, 'accounts/register.html')
-
 def register(request):
     if request.method == "POST":
         firstname = request.POST['firstname']
@@ -38,13 +31,11 @@ def register(request):
         isEmail = False
 
         if password == confirm_password:
-            # user already in database
             if User.objects.filter(username=username).exists():
                 isUsername = True
                 messages.error(request, "Username already exists !!!")
                 return redirect('register')
             
-            # email already exists
             if User.objects.filter(email=email).exists():
                 isEmail = True
                 if isEmail and isUsername:
@@ -75,7 +66,7 @@ def dashboard(request):
     messages.error(request, "You are not allowed to access this page !!!")
     return redirect('login')
 
-# def logout(request):
-#     auth.logout(request)
-#     messages.success(request, "You are now logged out successfully !!!")
-#     return redirect('login')
+def logout(request):
+    auth.logout(request)
+    messages.success(request, "You are now logged out successfully !!!")
+    return redirect('login')
