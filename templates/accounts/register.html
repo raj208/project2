@@ -25,9 +25,10 @@
                 <div class="form-section">
                     <div class="logo-2">
                         <a href="index.html">
-                            <img src="{% static 'img/logos/black-logo.png' %}" alt="logo">
+                            <img src="{% static 'images/logo2.png' %}" alt="logo">
                         </a>
                     </div>
+                    {% include 'includes/messages.html' %}
                     <h3>Create an account</h3>
                     <form action="{% url 'register' %}" method="POST">
                         {% csrf_token %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %} 
+
+    <div class="sub-banner overview-bgi">
+        <div class="container breadcrumb-area">
+            <div class="breadcrumb-areas">
+   
+                <h1>JOHAR</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="active">{{ product.product_name }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Sub banner start -->
+
+<!-- Sub Banner end -->
+
+<!--   Dashboard Start   -->
+
+
+
+<div class="container mt-50 mb-50">
+            <div class="main-title" style="text-align:left !important;">
+                {% if user.is_authenticated %}
+                    <h1>Welcome <span>{{ user.username }}</span></h1>
+                {% else %}
+                    <h1>Welcome <span>User</span></h1>
+                {% endif %}
+                <p>Here are the cars that you have inquired about</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   Dashboard End   -->
+
+
+{% endblock content %}
+
+{% include 'includes/footer.html' %}

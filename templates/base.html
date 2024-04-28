@@ -29,10 +29,23 @@
         }
     </style>
 
-</head> 
-<!-- {% include 'includes/topbar.html' %} -->
+<!-- 
+<style>
+	body {
+		background-color: black;
+		color: white;
+	}
 
-<!-- {% include 'includes/topbar.html' %} -->
+	/* Add space between topbar and navbar */
+	.topbar {
+		margin-bottom: 20px; /* Adjust the value as needed */
+	}
+</style> -->
+
+</head> 
+
+{% include 'includes/topbar.html' %}
+
 {% include 'includes/navbar.html' %}
 {% block content %}
 

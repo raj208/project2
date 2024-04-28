@@ -2977,6 +2977,9 @@ input[type=checkbox]:checked+label:before {
 .main-title {
     margin-bottom: 50px;
     text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
 }
 
 .main-title h1 {
@@ -10975,4 +10978,47 @@ body {
 
 .custom-text-colorc {
     color: cyan;
+}
+
+
+/* Add this CSS code to your existing styles.css or create a new CSS file */
+
+/* Styles for fluid images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for modalLabel-1 image */
+.modalLabel-1 {
+    /* Add specific styles for modalLabel-1 image */
+}
+
+/* Styles for modalLabel-2 image */
+.modalLabel-2 {
+    /* Add specific styles for modalLabel-2 image */
+}
+
+/* Add this CSS code to your existing styles.css or create a new CSS file */
+
+.background-with-image {
+    position: relative; /* Required for positioning child elements */
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Set text color to white for better visibility on a background image */
+    padding: 20px;
+}
+
+/* Optional: Style the text within the div */
+.background-with-image h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.background-with-image p {
+    font-size: 16px;
+    line-height: 1.5;
+    /* Add any other text styling properties as needed */
 }
