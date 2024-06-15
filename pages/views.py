@@ -22,6 +22,12 @@ def product(request):
 def fees(request):
     return render(request, 'pages/fees.html')
 
+def santhalMirror(request):
+    return render(request, 'pages/santhalMirror/santhalMirror.html')
+
+def santhalMirrorContent(request):
+    return render(request, 'pages/santhalMirror/santhalMirrorContent.html')
+
 def protfilio(request):
     return render(request, 'pages/protfilio.html')
 

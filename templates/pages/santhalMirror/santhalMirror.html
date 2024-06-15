@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% include 'includes/navbar.html' %}
+
+{% block content %}
+
+<style>
+    .thumbnail img {
+        width: 100%; /* Ensure the image takes 100% of the container width */
+        height: 200px; /* Set a fixed height */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+
+    .caption {
+        padding: 10px; /* Adjust padding as needed */
+    }
+</style>
+
+
+<section class="news">
+    <div class="container">
+        <h2 class="custom-text-colors">
+            Santhal Personalities
+        </h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="newsBox">
+                    <div class="thumbnail">
+                        <a href="{% url 'santhalMirrorContent' %}" target="_blank">
+                            <figure>
+                                <time datetime="2014-01-01">Personality 1</time>
+                                <img src="{% static 'images/fp1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    President of India
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="newsBox">
+                    <div class="thumbnail">
+                        <a href="https://en.wikipedia.org/wiki/Droupadi_Murmu" target="_blank">
+                            <figure>
+                                <time datetime="2014-01-01">Personality 1</time>
+                                <img src="{% static 'images/fp1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    President of India
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="newsBox">
+                    <div class="thumbnail">
+                        <a href="https://en.wikipedia.org/wiki/Droupadi_Murmu" target="_blank">
+                            <figure>
+                                <time datetime="2014-01-01">Personality 1</time>
+                                <img src="{% static 'images/fp1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    President of India
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="newsBox">
+                    <div class="thumbnail">
+                        <a href="https://en.wikipedia.org/wiki/Droupadi_Murmu" target="_blank">
+                            <figure>
+                                <time datetime="2014-01-01">Personality 1</time>
+                                <img src="{% static 'images/fp1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    President of India
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="newsBox">
+                    <div class="thumbnail">
+                        <a href="https://en.wikipedia.org/wiki/Droupadi_Murmu" target="_blank">
+                            <figure>
+                                <time datetime="2014-01-01">Personality 1</time>
+                                <img src="{% static 'images/fp1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    President of India
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Repeat the same structure for other images -->
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
+{% include 'includes/footer.html' %}

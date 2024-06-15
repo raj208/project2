@@ -8,6 +8,8 @@ urlpatterns = [
     path('contact/', views.contact, name ="contact"),
     path('product/', views.product, name ="product"),
     path('fees/', views.fees, name ="fees"),
+    path('santhalMirror/', views.santhalMirror, name ="santhalMirror"),
+    path('santhalMirrorContent/', views.santhalMirrorContent, name ="santhalMirrorContent"),
     path('protfilio/', views.protfilio, name ="protfilio"),
     path('sidebar/', views.sidebar, name ="sidebar"),
 ]
